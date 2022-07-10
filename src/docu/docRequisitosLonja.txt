@@ -1,0 +1,15 @@
+Laboratorio
+
+Creamos un proyecto nuevo llamado Lonja
+
+La lonja es básicamente un gran cámara frigorífica que almacena cajas de "fruta del mar" >= 4 tipos
+1) La lonja está vacía            --> crear lo necesario para trabajar
+2) Llegan los barcos con "cajas"    --> creamos (random) cajas para guardar en la lonja
+3) Imprimimos lo que tenemos        --> Nos dicen si están o no limpios, pesados y suy valor
+Procesos posibles:
+4) Limpiamos las cajas
+5) Pesamos las cajas
+6) Valoramos las cajas (pujas)
+---> 3)
+7) Vaciamos la lonja
+ 

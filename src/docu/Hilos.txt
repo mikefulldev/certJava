@@ -1,0 +1,60 @@
+Hilos
+
+Java arranca creando un marco de ejecución.
+- Es un lugar donde se van a poder ejecutar "subprogramas".
+- Se va a "administrar" el tiempo de CPU para cada uno.
+- Labor de semáforo
+- Labor de "testigo". Quien lo tiene es quien está en la CPU.
+
+Conceptos:
+ - hilos (Threads). Un hilo ejecuta un programa. (bucle).
+ - monitores -> El testigo que marca quién se está ejecutando.
+ - grupos de hilos. Permite administrar el tiempo para grupos de programas por prioridad.
+ 
+ En java los hilos son Threads.
+ Si quieres que tu aplicación funcione en un hilo ha de "extends" de Thread (es una clase).
+ En java sólo podemos extender de 1 clase. Lo cual nos impide heredar de otra clase distinta.
+ 
+ Para casos como este (no podemos o queremos extender de Thread) podemos:
+ - implements Runnable
+ 
+ - - - - -
+ 
+ 
+ Thread (Clase)
+ Runnable (Interface)
+ 
+ 
+ Clase extiende de Thread, sobreescribimos el método run() y ejecutamos .start()
+ Clase implemeta Runnable, escribimos run(), se la pasamos a un Thread y la ejecutamos con .start
+  
+ 
+ Thread pone ne marcha todo el mecanismo de hilos
+ En el método run() es donde escribimos lo que queremos hacer
+ Y lo ejecutamos con start()
+ start() termina por llamar al método run() como un hilo
+ 
+ 
+ ---------------------------------------------------
+ 
+ 
+ Ejercicio:
+ 
+ Queremos usar coches con maletero para la carrera
+ 
+ - pistas:
+ 
+ Los coches deben extender de "CochesConMaletero"
+ -> No pueden extender de Thread
+ -> deben implementar la interface Runnable ->>
+ ->> les obliga a escribir un método run()
+ 
+ Los coches se van a poder llamar con 
+ 
+ new Thread(coche1).start();
+ 
+ 
+ 
+ 
+ 
+ 
