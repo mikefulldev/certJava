@@ -1,0 +1,40 @@
+Vamos a programar un taller.
+Podremos recibir dos tipos de vehículos: coches y motos.
+El máximo de vehiculos es de 5.
+Las motos y los coches pueden estar estropeados y se podrán arreglar.
+Las motos se arreglan cambiando la cadena.
+Los coches se arreglan engrasando las puertas.
+
+Se implementará:
+
+Una clase vehiculo abstracta que tenga:
+- marca
+- modelo
+- cilindrada
+
+Una clase coche que tenga:
+- numero de puertas
+
+Una clase moto que tenga:
+- tipo de motor ( 2 ó 4 tiempos )
+
+Una interface arreglable que defina:
+- si está roto
+- si está arreglado
+- un método arreglar
+
+Un taller que será una colección de objetos que se puedan arreglar
+
+Una clase test que pondrá a prueba todo:
+- crea un taller
+- añade motos y coches variados superando el número permitido
+- informa cuando ya no se pueden añadir más cosas
+- informa los datos de cada cosa que hay en el taller
+- repara lo que se pueda del taller
+- informa de nuevo
+
+
+
+
+
+

@@ -5,7 +5,7 @@ import java.util.Random;
 public class CocheConMaleteroRunnable extends CocheConMaletero implements Runnable{
 
 	//Atributos para aleaoriedad lentitud.
-	private static Random random = new Random();
+	private static Random random = new Random(System.currentTimeMillis());
 	private static final int LENTITUD_MIN = 15;
 	private static final int LENTITUD_MAX = 20;
 	
